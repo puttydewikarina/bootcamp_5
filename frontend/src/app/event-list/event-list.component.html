@@ -1,0 +1,36 @@
+<div class="col-md-8 col-md-offset-2">
+ <br>
+
+    <table class="table table-bordered table-hover table-striped">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Venue</th>
+        <th>Ticket Price</th>
+        <th>Quantity</th>
+        <th>On Sale</th>
+      </tr>
+
+      <tr>
+        <td> 1 </td>
+        <td> Wimbledon </td>
+        <td> 04/2018 </td>
+        <td> All England Tennis Lawn </td>
+        <td> 350 </td>
+        <td> 500 </td>
+        <td><button class="btn btn-primary">Buy Ticket</button></td>
+      </tr>
+
+      <tr *ngFor="let eventAdd of event">
+        <td> {{ eventAdd.ID }} </td>
+        <td> {{ eventAdd.name }} </td>
+        <td> {{ eventAdd.date }} </td>
+        <td> {{ eventAdd.venue }} </td>
+        <td> {{ eventAdd.ticket_price }} </td>
+        <td> {{ eventAdd.qty }} </td>
+        <td><button class="btn btn-primary">Buy Ticket</button></td>
+      </tr>
+    </table>
+
+</div>
